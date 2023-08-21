@@ -99,7 +99,7 @@ def deco(work):
         else:
             raaa = raaa + work[i]
             num = num + 1
-        if (shit != code) and (len(shit) == len(code)):
+        if (shit != code) and (len(shit) == (len(small) - len(code))):
             rad = ""
             for i in range(len(message)):
                 rad = rad + message[int(random.randint(0, 12 - 1))]
@@ -117,12 +117,11 @@ type = int(input("Type:"))
 task = input("Encryption(I) or Decryption (D)?")
 message = input("CODE message:")
 
-chabi = int((len(code) + 3) / type)
+chabi = int(((len(small) - len(code)) + 3) / type)
 
 n = 0
 n1 = ""
 axe = ""
-axe2 = ""
 
 if task == "I":
 
@@ -133,20 +132,20 @@ if task == "I":
         if index % chabi == 0:
             axe = axe + code[n]
             n = n + 1
-            if n == (len(code)):
+            if n == ((len(small) - len(code))):
                 n = 0
 
     axe = opo(axe)
 
     for index, i in enumerate(axe):
-        axe2 = axe2 + axe[index]
+        axe = axe + axe[index]
         if index % chabi == 0:
-            axe2 = axe2 + jnik()
+            axe = axe + jnik()
             n = n + 1
-            if n == (len(code)):
+            if n == ((len(small) - len(code))):
                 n = 0
 
-    print("->", axe2)
+    print("->", axe)
 
 elif task == "D":
     n1 = ulto(message)
