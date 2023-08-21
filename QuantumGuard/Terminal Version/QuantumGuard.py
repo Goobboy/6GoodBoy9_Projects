@@ -1,4 +1,4 @@
-# sorry this will be a bit flawed...I will few numbers... goodluck decrypting without the key and code.
+# sorry this will be a bit flawed...I will change few numbers... goodluck decrypting without the key and code.
 import random
 
 sabai = "QWERTYUIIOPASDFGHJKLZXCVBNMqwertyuiopasadfghjjklzzxcvbnm.,?+-_=@1234567890!!"
