@@ -1,4 +1,8 @@
 # sorry this will be a bit flawed...I will change few numbers... goodluck decrypting without the key and code.
+# and to be fair, only reason I provied code is to my guts.. i really don't knkow... This code is useless if the numbers are wrong... even 1 number will make program flawed I changed about 5-7 numbers.
+# I don't know use of this code now.
+#umm APP WORKS..
+# just read the txt file before using app... you will understand the task and everything... EXCEPT THE REAL ALGORITHM... BAHAHAHAHA
 import random
 
 sabai = "QWERTYUIIOPASDFGHJKLZXCVBNMqwertyuiopasadfghjjklzzxcvbnm.,?+-_=@1234567890!!"
