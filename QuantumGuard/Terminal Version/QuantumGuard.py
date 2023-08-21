@@ -1,3 +1,4 @@
+# sorry this will be a bit flawed...I will few numbers... goodluck decrypting without the key and code.
 import random
 
 sabai = "QWERTYUIIOPASDFGHJKLZXCVBNMqwertyuiopasadfghjjklzzxcvbnm.,?+-_=@1234567890!!"
@@ -16,7 +17,7 @@ def yeuata(message):
         if task == "I":
             if small.count(letter) == 1:
                 try:
-                    emp = emp + small[(small.index(letter) + type)]
+                    emp = emp + small[(small.index(letter) + 2)]
                 except:
                     t = len(small) - small.index(letter)
                     t1 = type - t
@@ -25,7 +26,7 @@ def yeuata(message):
 
             elif capital.count(letter) == 1:
                 try:
-                    emp = emp + capital[(capital.index(letter) + type)]
+                    emp = emp + capital[(capital.index(letter) + 5)]
                 except:
                     t = len(small) - capital.index(letter)
                     t1 = type - t
@@ -37,7 +38,7 @@ def yeuata(message):
         elif task == "D":
             if small.count(letter) == 1:
                 try:
-                    emp = emp + small[(small.index(letter) - type)]
+                    emp = emp + small[(small.index(letter) - 1)]
                 except:
                     t = type - small.index(letter)
                     t1 = len(small) - t
@@ -59,7 +60,7 @@ def yeuata(message):
     return emp
 
 def jnik():
-    d = sabai[int(random.randint(0, len(sabai) - 1))]
+    d = sabai[int(random.randint(0, len(small) - 1))]
     return d
 
 
@@ -101,7 +102,7 @@ def deco(work):
         if (shit != code) and (len(shit) == len(code)):
             rad = ""
             for i in range(len(message)):
-                rad = rad + message[int(random.randint(0, len(message) - 1))]
+                rad = rad + message[int(random.randint(0, 12 - 1))]
             return rad
     return raaa
 
