@@ -20,11 +20,32 @@ def warning(type_msg):
         logging.warning("An 'Organized_Folder' will be created if it doesn't already exist.")
 
 
-image_files = ('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.tif', '.ico', '.webp')
-document_files = ('.txt', '.pdf', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx')
-audio_files = ('.mp3', '.wav', '.flac', '.aac')
-video_files = ('.mp4', '.avi', '.mkv', '.mov', '.wmv')
-archive_files = ('.zip', '.rar', '.7z', '.tar', '.gz')
+image_files = (
+    '.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.tif', '.ico', '.webp',
+    '.JPG', '.JPEG', '.PNG', '.GIF', '.BMP', '.TIFF', '.TIF', '.ICO', '.WEBP',
+    '.svg', '.SVG', '.heic', '.HEIC', '.heif', '.HEIF', '.raw', '.RAW', 
+    '.cr2', '.CR2', '.nef', '.NEF', '.arw', '.ARW', '.avif', '.AVIF')
+
+document_files = (
+    '.txt', '.pdf', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx',
+    '.TXT', '.PDF', '.DOC', '.DOCX', '.XLS', '.XLSX', '.PPT', '.PPTX',
+    '.odt', '.ODT', '.ods', '.ODS', '.odp', '.ODP', '.rtf', '.RTF',
+    '.csv', '.CSV', '.md', '.MD', '.tex', '.TEX', '.epub', '.EPUB')
+
+audio_files = (
+    '.mp3', '.wav', '.flac', '.aac', '.ogg', '.wma', '.m4a', '.opus',
+    '.MP3', '.WAV', '.FLAC', '.AAC', '.OGG', '.WMA', '.M4A', '.OPUS',
+    '.aiff', '.AIFF', '.ape', '.APE', '.alac', '.ALAC')
+
+video_files = (
+    '.mp4', '.avi', '.mkv', '.mov', '.wmv', '.flv', '.webm', '.m4v',
+    '.MP4', '.AVI', '.MKV', '.MOV', '.WMV', '.FLV', '.WEBM', '.M4V',
+    '.mpeg', '.MPEG', '.mpg', '.MPG', '.3gp', '.3GP', '.ogv', '.OGV')
+
+archive_files = (
+    '.zip', '.rar', '.7z', '.tar', '.gz', '.bz2', '.xz', '.tar.gz',
+    '.ZIP', '.RAR', '.7Z', '.TAR', '.GZ', '.BZ2', '.XZ', '.TAR.GZ',
+    '.tgz', '.TGZ', '.tar.bz2', '.TAR.BZ2', '.iso', '.ISO', '.dmg', '.DMG')
 
 
 def Organizer(files, destination):
@@ -107,3 +128,4 @@ print("\n\n")
 print("__________Task Completed__________")
 input("Press Enter to exit.")
 exit()
+
